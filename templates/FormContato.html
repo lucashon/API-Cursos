@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #6495Ed ;
+    }
+    h1{
+        font-family: arial;
+        color: whitesmoke;
+    }
+    div{
+        padding: 5px;
+        margin: 5px;
+    }
+    input {
+        border-radius: 5px;
+        border-color: #6495Ed;
+        height: 20px;
+        }
+        .btn:hover{
+            background-color: #6495Ed;
+            border: #6495Ed;
+        }
+
+</style>
+<body>
+    <h1>Formulario de cadastro: Contatos
+    </h1>
+    <!-- Action onde eu vou mandar as informações/ rota -->
+    <!-- Method Metodo que eu vou fazer isso/como? -->
+    <form action="/user/save" method="POST">
+        <div>
+            <input type="text" name="name" placeholder="Digite seu nome">
+            
+        </div>
+        <div>
+            <input type="tel" name="numero" placeholder="Digite seu Contato">
+        </div>
+        <div>
+            <input type="text" name="age" placeholder="Digite sua idade">
+        </div>
+        <div>
+            <input type="text" name="email" placeholder="Digite seu E-mail">
+        </div>
+        <!-- CADASTRAR -->
+        <div>
+            <input class="btn" type="submit" value="Cadastrar">
+        </div>
+    </form>
+</body>
+</html>
